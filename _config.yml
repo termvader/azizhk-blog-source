@@ -1,0 +1,14 @@
+markdown: rdiscount
+rdiscount:
+  extensions: [smart]
+pygments: true
+permalink: :year/:month/:title/
+paginate: 5
+
+title: Aziz H K
+author: Aziz H K
+email: aziz.h.khambati@gmail.com
+description: Hi I am a student at BITS Pilani
+url: http://azizhk.github.io
+
+exclude: ["config.json", "Gemfile", "Gemfile.lock", "Rakefile", "README.md", "scss"]
