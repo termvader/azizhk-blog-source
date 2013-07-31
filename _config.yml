@@ -1,3 +1,6 @@
+source: .
+destination: ../azizhk.github.io/
+
 markdown: rdiscount
 rdiscount:
   extensions: [smart]
@@ -11,4 +14,5 @@ email: aziz.h.khambati@gmail.com
 description: Hi I am a student at BITS Pilani
 url: http://azizhk.github.io
 
-exclude: ["config.json", "Gemfile", "Gemfile.lock", "Rakefile", "README.md", "scss"]
+keep_files:  ['.git','.svn', 'README.md', '.nojekyll', '.gitignore']
+exclude: ["README.md", 'Build.bat']
