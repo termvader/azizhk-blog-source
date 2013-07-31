@@ -1,0 +1,15 @@
+---
+layout: default
+grouptype: tag
+---
+<div class="gray-box">
+    <p><strong>See posts tagged:</strong></p>
+</div>
+
+<ul>
+{% for pair in page.pairs %}
+  <li>
+    <a href="{{ pair[1] }}/" title="Posts tagged with {{ pair[0] }}">{{ pair[0] }}</a>
+  </li>
+{% endfor %}
+</ul>
