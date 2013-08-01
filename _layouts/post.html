@@ -16,16 +16,16 @@ page-class: page-post
   {% if page.tags != empty %}
     <footer class="entry-meta entry-meta-footer">
       <span class="icon-tag"></span>
-      <span class="icon-left entry-meta-icon">
+      <span class="entry-meta-icon">
         {% for tag in page.tags %}
-          <a class="nav-link-tag" href="{{ relative }}tag/{{ tag | replace:' ','-' | downcase }}" rel="tag">{{ tag }}</a>{% if forloop.last == false %}, {% endif %}
+          <a class="nav-link-tag" href="{{ relative }}tag/{{ tag | replace:' ','-' | downcase }}" rel="tag" title="See Posts Tagged with {{ tag }}">{{ tag }}</a>{% if forloop.last == false %}, {% endif %}
         {% endfor %}
       </span>
       {% if page.categories != empty %}
         <span class="icon-folder"></span>
-        <span class="icon-left entry-meta-icon">
+        <span class="entry-meta-icon">
           {% for category in page.categories %}
-            <a class="nav-link-category" href="{{ relative }}categories/{{ category | replace:' ','-' }}" rel="category">{{ category | capitalize }}</a>{% if forloop.last == false %}, {% endif %}
+            <a class="nav-link-category" href="{{ relative }}categories/{{ category | replace:' ','-' }}" rel="category" title="See Posts Categorized with {{ category | capitalize }}">{{ category | capitalize }}</a>{% if forloop.last == false %}, {% endif %}
           {% endfor %}
         </span>
       {% endif %}

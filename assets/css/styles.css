@@ -708,6 +708,8 @@ you can use the generic selector below, but it's slower:
 	content: "\74";
 }
 .icon-folder:before {
+	margin-left: 8px;
+	margin-left: .5rem;
 	content: "\63";
 }
 .icon-facebook:before {
@@ -1401,14 +1403,14 @@ nav a:focus,nav a:active {
 	font-weight: 600;
 }
 
-.entry-meta-icon {
+/*.entry-meta-icon {
 	margin-left: 8px;
 	margin-left: .5rem;
 }
 
 .entry-meta-icon:first-child {
 	margin-left: 0;
-}
+}*/
 
 .entry-meta-icon:before {
 	color: #bdbdbd;
