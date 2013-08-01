@@ -657,63 +657,69 @@ h1 a:focus,h1 a:active,h2 a:focus,h2 a:active,h3 a:focus,h3 a:active,h4 a:focus,
 }
 
 @font-face {
-	font-family: fontello;
-	src: url(../fonts/fontello.eot);
-	src: url(../fonts/fontello.eot#iefix) format(embedded-opentype),url(../fonts/fontello.woff) format(woff),url(../fonts/fontello.ttf) format(truetype),url(../fonts/fontello.svg#fontello) format(svg);
-	font-weight: 400;
+	font-family: 'azizhk-icons';
+	src:url('fonts/azizhk-icons.eot');
+	src:url('fonts/azizhk-icons.eot?#iefix') format('embedded-opentype'),
+		url('fonts/azizhk-icons.woff') format('woff'),
+		url('fonts/azizhk-icons.ttf') format('truetype'),
+		url('fonts/azizhk-icons.svg#azizhk-icons') format('svg');
+	font-weight: normal;
 	font-style: normal;
 }
 
-[class^=icon-]:before,[class^=icon-]:after,[class*=" icon-"]:before,[class*=" icon-"]:after {
-	font-family: fontello;
-	-webkit-font-smoothing: antialiased;
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-icon]:before {
+	font-family: 'azizhk-icons';
+	content: attr(data-icon);
 	speak: none;
-	display: inline-block;
-	text-align: center;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
 }
 
-.icon-left:before {
-	font-weight: 600;
-	margin-right: 4px;
-	margin-right: .25rem;
+/* Use the following CSS code if you want to have a class per icon */
+/*
+Instead of a list of all class selectors,
+you can use the generic selector below, but it's slower:
+[class*="icon-"] {
+*/
+.icon-arrow-down-right, .icon-arrow-down-left, .icon-arrow-right, .icon-tag, .icon-folder, .icon-facebook, .icon-github, .icon-calendar {
+	font-family: 'azizhk-icons';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
 }
-
-.icon-right:before {
-	margin-left: 4px;
-	margin-left: .25rem;
+.icon-arrow-down-right:before {
+	content: "\72";
 }
-
+.icon-arrow-down-left:before {
+	content: "\6c";
+}
+.icon-arrow-right:before {
+	content: "\6e";
+}
 .icon-tag:before {
-	content: '\e70c';
+	content: "\74";
 }
-
-.icon-category:before {
-	content: '\e738';
+.icon-folder:before {
+	content: "\63";
 }
-
-.icon-rss:before {
-	content: '\e801';
+.icon-facebook:before {
+	content: "\66";
 }
-
-.icon-blank:after {
-	content: '\e802';
-}
-
 .icon-github:before {
-	content: '\f300';
+	content: "\67";
+}
+.icon-calendar:before {
+	content: "\64";
 }
 
-.icon-twitter:before {
-	content: '\f309';
-}
-
-.icon-tumblr:before {
-	content: '\e803';
-}
-
-.icon-entry-date:before {
-	content: '🕔';
-}
 
 img {
 	max-width: 100%;
@@ -1342,22 +1348,22 @@ nav a:focus,nav a:active {
 .nav-previous {
 	float: left;
 }
-
+/*
 .nav-previous-link:before {
 	content: "\2190";
 	margin-right: 4px;
 	margin-right: .25rem;
-}
+}*/
 
 .nav-next {
 	float: right;
 }
-
+/*
 .nav-next-link:after {
 	content: "\2192";
 	margin-left: 4px;
 	margin-left: .25rem;
-}
+}*/
 
 .post {
 	margin: 66px 0 48px;
