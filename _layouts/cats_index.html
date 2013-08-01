@@ -1,0 +1,15 @@
+---
+layout: default
+grouptype: category_all
+---
+<div class="gray-box">
+    <p><strong>See posts categorized:</strong></p>
+</div>
+
+<ul>
+{% for pair in page.pairs %}
+  <li>
+    <a href="{{ pair[1] }}/" title="Posts Categorized with {{ pair[0] }}">{{ pair[0] }}</a>
+  </li>
+{% endfor %}
+</ul>

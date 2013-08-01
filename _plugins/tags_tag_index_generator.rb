@@ -16,8 +16,7 @@ module Jekyll
       if site.layouts.key? 'tags_tag_index'
         dir = site.config['tag_dir'] || 'tag'
         site.tags.keys.each do |tag|
-          tag_dirname = tag.downcase;
-          tag_dirname = tag_dirname.gsub(/ /, '-')
+          tag_dirname = tag.downcase.strip.gsub(/ /, '-')
           write_tag_index(site, File.join(dir, tag_dirname), tag)
         end
       end

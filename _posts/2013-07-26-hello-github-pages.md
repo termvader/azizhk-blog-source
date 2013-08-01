@@ -4,7 +4,7 @@ layout: post
 slug: hello
 title: Hello Github Pages
 description: My post after shifting to Github Pages
-category: hello
+category: Gen
 tags:
 - Hello
 ---

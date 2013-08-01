@@ -1,0 +1,33 @@
+---
+layout: default
+grouptype: category
+---
+<div class="gray-box">
+    <p>Posts Categorized <strong>“{{ page.category }}”</strong></p>
+</div>
+
+{% for post in site.posts %}
+  {% if post.category == page.category %}
+
+    <article>
+      <header class="entry-header">
+        <h1 class="entry-title"><a href="../..{{ post.url }}" rel="bookmark" title="Permalink to {{ post.title }}">{{ post.title }}</a></h1>
+
+        <div class="entry-meta entry-meta-header">
+          <span class="icon-left icon-entry-date entry-meta-icon">
+            <a class="entry-meta-link" href="../..{{ post.url }}" rel="bookmark" title="{{ post.date }}">
+              <time class="date updated" datetime="{{ post.date }}">{{ post.date | date: "%d %B %Y" }}</time>
+            </a>
+          </span>
+        </div>
+      </header>
+
+      <div class="entry-content">
+        <p>{{ post.description }}</p>
+        <a class="continue-reading" href="../..{{ post.url }}" rel="bookmark" title="Permalink to {{ post.title }}">Continue Reading</a>
+      </div>
+    </article>
+
+  {% endif %}
+
+{% endfor %}

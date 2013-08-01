@@ -24,10 +24,8 @@ module Jekyll
         tagsdirname = []
         site.tags.keys.each do |tag|
 
-          tag_dirname = tag.downcase
-          tag_dirname = tag_dirname.gsub(/ /, '-')
           tags.push(tag)
-          tagsdirname.push(tag_dirname)
+          tagsdirname.push(tag.downcase.strip.gsub(/ /, '-'))
 
         end
         pairs = tags.zip(tagsdirname)

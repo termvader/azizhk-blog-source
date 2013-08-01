@@ -4,7 +4,7 @@ layout: post
 slug: TTTSquare
 title: Tic Tac Toe Square
 description: 2 Player Inception Version of Tic Tac Toe
-category: Game Dev
+category: Game Development
 tags: 
 - Javascript
 - NodeJS
