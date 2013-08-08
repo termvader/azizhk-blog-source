@@ -14,5 +14,5 @@ email: aziz.h.khambati@gmail.com
 description: Hi I am a student at BITS Pilani
 url: http://azizhk.github.io
 
-keep_files:  ['.git','.svn', 'README.md', '.nojekyll', '.gitignore', 'assets\\css\\style2.css']
-exclude: ["README.md", 'Build.bat', 'temp']
+keep_files:  ['.git','.svn', 'README.md', '.nojekyll', '.gitignore']
+exclude: ["README.md", 'Build.bat', 'temp', 'styles2.css']

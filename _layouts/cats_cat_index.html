@@ -6,9 +6,7 @@ grouptype: category
     <p>Posts Categorized <strong>“{{ page.category }}”</strong></p>
 </div>
 
-{% for post in site.posts %}
-  {% if post.category == page.category %}
-
+{% for post in site.posts %}{% if post.category == page.category %}
     <article>
       <header class="entry-header">
         <h1 class="entry-title"><a href="../..{{ post.url }}" rel="bookmark" title="Permalink to {{ post.title }}">{{ post.title }}</a></h1>
@@ -27,7 +25,4 @@ grouptype: category
         <a class="continue-reading" href="../..{{ post.url }}" rel="bookmark" title="Permalink to {{ post.title }}">Continue Reading</a>
       </div>
     </article>
-
-  {% endif %}
-
-{% endfor %}
+{% endif %}{% endfor %}
