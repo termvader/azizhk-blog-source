@@ -12,11 +12,8 @@ grouptype: category
         <h1 class="entry-title"><a href="../..{{ post.url }}" rel="bookmark" title="Permalink to {{ post.title }}">{{ post.title }}</a></h1>
 
         <div class="entry-meta entry-meta-header">
-          <span class="icon-left icon-entry-date entry-meta-icon">
-            <a class="entry-meta-link" href="../..{{ post.url }}" rel="bookmark" title="{{ post.date }}">
-              <time class="date updated" datetime="{{ post.date }}">{{ post.date | date: "%d %B %Y" }}</time>
-            </a>
-          </span>
+          <span class="icon-calendar"></span>
+          <time class="date updated" datetime="{{ post.date }}">{{ post.date | date: "%d %B %Y" }}</time>
         </div>
       </header>
 
