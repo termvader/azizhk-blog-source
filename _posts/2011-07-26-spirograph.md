@@ -10,20 +10,46 @@ tags:
 - Flash
 ---
 
-Check out the source of this website, repositories and other files.
+> A Spirograph is a geometric drawing toy that produces mathematical roulette curves of the variety technically known as hypotrochoids and epitrochoids. It was developed by British engineer Denys Fisher and first sold in 1965
+>
+> <cite>[Wikipedia](http://en.wikipedia.org/wiki/Spirograph)</cite>
 
-So finally I think I am close to a completion at modifying the design of this site. I have two repositories related to it. One is the jekyll source which is [https://github.com/termvader/azizhk-blog-source](https://github.com/termvader/azizhk-blog-source). Basically I am using plugins to generate pages related to the tags and categories, hence I cannot directly upload on azizhk.github.io repo, which btw is [https://github.com/azizhk/azizhk.github.io](https://github.com/azizhk/azizhk.github.io).
+Well I don't know much about hypotrochoids and epitrochoids but I made this using what I had learnt in Pre-College. I first made this in Excel by making a Graph. Then in college, after learning Flash made this in July 2011.
 
-This website is inspired and sort of modified from David Ensinger's website which can be found here: [http://davidensinger.com/](http://davidensinger.com/) and the github repo for the source is available over here: [https://github.com/davidensinger/davidensinger.github.io](https://github.com/davidensinger/davidensinger.github.io)
+<div id="flashContent" style="width:800px; height:1000px;">
+	<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="800" height="1000" id="Spirograph" align="middle">
+		<param name="movie" value="../../../assets/img/posts/2011-07-26-spirograph.swf" />
+		<param name="quality" value="high" />
+		<param name="bgcolor" value="#ffffff" />
+		<param name="play" value="true" />
+		<param name="loop" value="true" />
+		<param name="wmode" value="window" />
+		<param name="scale" value="showall" />
+		<param name="menu" value="false" />
+		<param name="devicefont" value="false" />
+		<param name="salign" value="" />
+		<param name="allowScriptAccess" value="sameDomain" />
+		<!--[if !IE]>-->
+		<object type="application/x-shockwave-flash" data="../../../assets/img/posts/2011-07-26-spirograph.swf" width="800" height="1000">
+			<param name="movie" value="../../../assets/img/posts/2011-07-26-spirograph.swf" />
+			<param name="quality" value="high" />
+			<param name="bgcolor" value="#ffffff" />
+			<param name="play" value="true" />
+			<param name="loop" value="true" />
+			<param name="wmode" value="window" />
+			<param name="scale" value="showall" />
+			<param name="menu" value="false" />
+			<param name="devicefont" value="false" />
+			<param name="salign" value="" />
+			<param name="allowScriptAccess" value="sameDomain" />
+		<!--<![endif]-->
+			<a href="http://www.adobe.com/go/getflash">
+				<img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" />
+			</a>
+		<!--[if !IE]>-->
+		</object>
+		<!--<![endif]-->
+	</object>
+</div>
 
-I have made some few changes from David's source,
-- Made different files for categories and tags pages to seperate stuff.
-- Added a Build.bat file to build from Windows. (If you are using Mac or Linux, you can check out David's Rake file and his awesome post explaining it [here](http://davidensinger.com/2013/07/automating-jekyll-deployment-to-github-pages-with-rake/))
-
-If you are developing your own site by forking from mine, please change the logo.
-
-And finally, to all my department mates,
-
-<img src="../../../assets/img/posts/2013-08-07-batmansignal.png" alt="Feel free to contact me in case you are finding any difficulty." class="media-center img-border" />
-
-Feel free to contact me in case you are finding any difficulty.
+This post has been moved from my old [blog](https://sites.google.com/site/azizhkhambati/adobeflash/spirograph).
