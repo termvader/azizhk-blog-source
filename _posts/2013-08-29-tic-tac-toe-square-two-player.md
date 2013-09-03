@@ -18,6 +18,10 @@ So finally a long time after my previos post, where I had shown intentions of de
 
 I initially wanted to host it on Heroku but it does not support Websockets. So shifted to Openshift. But unfortunately Openshift used port 8000 for Websockets which are blocked in my college. Will try using XHR-Polling to see if the issue gets sorted out.
 
+<div class="gray-box">
+    <p><strong>Update: </strong>Hosted the game on Heroku also, which works where port 8000 is blocked. Do check it out <a href="http://ttt2-termvader.herokuapp.com/" target="_blank">here</a>.</p>
+</div>
+
 The following rules have been adopted from <http://mathwithbaddrawings.com/2013/06/16/ultimate-tic-tac-toe/>
 
 <a id="Rules"><h1>Rules</h1></a>
