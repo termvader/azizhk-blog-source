@@ -6,7 +6,7 @@ page-class: page-home
   <article class="post">
     <header class="entry-header">
       <h1 class="entry-title">
-        <a href=".{{ post.url }}" rel="bookmark" title="Permalink to {{ post.title }}">{{ post.title }}</a>
+        <a href="{{ post.url }}" rel="bookmark" title="Permalink to {{ post.title }}">{{ post.title }}</a>
       </h1>
       <div class="entry-meta entry-meta-header">
         <span class="icon-calendar"></span>
@@ -16,7 +16,7 @@ page-class: page-home
     <div class="entry-content">
       {% if post.description %}
         {{ post.description | markdownify }}
-          <a class="continue-reading" href=".{{ post.url }}" rel="bookmark" title="Permalink to {{ post.title }}">Continue Reading</a>
+          <a class="continue-reading" href="{{ post.url }}" rel="bookmark" title="Permalink to {{ post.title }}">Continue Reading</a>
         {% else %}
           {{ post.content }}
       {% endif %}
