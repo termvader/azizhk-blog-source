@@ -7,7 +7,7 @@ description: Litebox Animation
 category: Web Development
 tags: 
 - Flash
-- JavaScript
+- Javascript
 - Three.js
 - GreenSock
 ---
